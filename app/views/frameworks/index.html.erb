@@ -1,0 +1,12 @@
+<% content_for :title, "Rails na UQBITZ" %>
+
+<main data-marker="uqbitz-example-rails-v1">
+  <h1>Rails na UQBITZ</h1>
+  <p class="lead">Lido do PostgreSQL agora (<%= @frameworks.size %> linhas):</p>
+  <ul>
+    <% @frameworks.each do |framework| %>
+      <li><%= framework.name %> <small>(<%= framework.runtime %>)</small></li>
+    <% end %>
+  </ul>
+  <p><small>uqbitz-example-rails-v1 · Rails <%= Rails.version %> · Ruby <%= RUBY_VERSION %></small></p>
+</main>
